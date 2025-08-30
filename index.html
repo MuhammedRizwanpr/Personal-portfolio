@@ -6,36 +6,77 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link rel="stylesheet" href="fonts/icomoon/style.css">
-
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 
-<script type="text/javascript"
+	<script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "ET0jvlp5SiXeeCxM5",
-      });
-   })();
-</script>
-
-<script src="mail.js"></script>
-<script src="validation.js"></script>
+	</script>
+	<script type="text/javascript">
+	   (function(){
+		  emailjs.init({
+			publicKey: "ET0jvlp5SiXeeCxM5",
+		  });
+	   })();
+	</script>
+	<script src="mail.js"></script>
+	<script src="validation.js"></script>
+	<style>
+		/* RESPONSIVE CHANGE: Fix long meta row on project cards */
+		@media (max-width: 576px) {
+			.blog-flex .row {
+				flex-direction: column;
+				align-items: center;
+			}
+			.blog-entry {
+				max-width: 90vw;
+			}
+			.site-hero h1 {
+				font-size: 2rem;
+			}
+			.site-hero strong {
+				font-size: 1rem;
+			}
+			.section-heading h2 {
+				font-size: 1.5rem;
+			}
+		}
+		@media (max-width: 768px) {
+			.site-hero {
+				padding: 80px 0 40px 0;
+			}
+			.site-hero h1 {
+				font-size: 2.3rem;
+			}
+			.site-section, .site-section.pb-0 {
+				padding-top: 40px;
+				padding-bottom: 30px;
+			}
+			.blog-entry-text h3 {
+				font-size: 1rem;
+			}
+			.site-service-item {
+				padding: 20px 10px;
+			}
+			.site-contact-details {
+				font-size: 0.95rem;
+			}
+		}
+		/* RESPONSIVE CHANGE: Make images and videos scale perfectly */
+		.img-fluid, video.img-fluid {
+			max-width: 100%;
+			height: auto;
+		}
+	</style>
 </head>
 <body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
 
-
-
 	<nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
-
 		<div class="container">
+			<a class="navbar-brand d-lg-none d-block" href="#section-home">Muhammed Rizwan PR</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-
-
 			<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
 				<ul class="navbar-nav">
 					<li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
@@ -48,19 +89,19 @@
 			</div>
 		</div>
 	</nav>
+
 	<section class="site-hero" style="background-image: url(images/91efa95f-48b8-4e4b-81cf-046554b96ca9.png);" id="section-home" data-stellar-background-ratio="0.5">
 		<div class="container">
 			<div class="row intro-text align-items-center justify-content-center">
 				<div class="col-md-10 text-center pt-5">
-
 					<h1 class="site-heading site-animate">Hello, I'm <strong class="d-block">Muhammed Rizwan PR</strong></h1>
 					<strong class="d-block text-white text-uppercase letter-spacing">and this is My Rezume</strong>
-
 				</div>
 			</div>
 		</div>
-	</section> <!-- section -->
-	<section class="site-section " id="section-resume">
+	</section>
+
+	<section class="site-section" id="section-resume">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 mb-5">
@@ -73,52 +114,46 @@
 					<div class="resume-item mb-4">
 						<span class="date"><span class="icon-calendar"></span> March 2025 </span>
 						<h3>Plus Two Graduate</h3>
-						<p> "I am a Plus Two graduate in Commerce with Computer Science. I have a strong interest in computers and cybersecurity, and I am currently learning cybersecurity through self-study. I am also familiar with MS Office, Tally, and basic programming and web design. I enjoy learning new skills and working on practical projects that help me grow both technically and professionally."</p>
+						<p>"I am a Plus Two graduate in Commerce with Computer Science. I have a strong interest in computers and cybersecurity, and I am currently learning cybersecurity through self-study. I am also familiar with MS Office, Tally, and basic programming and web design. I enjoy learning new skills and working on practical projects that help me grow both technically and professionally."</p>
 						<span class="school">Azhicode S S M H S Schoole</span>
 					</div>
 				</div>
 				<div class="col-md-6">
-
-
 					<h2 class="mb-5">No Experience</h2>
-
 					<div class="resume-item mb-4">
-						<span class="date"><span class="icon-calendar"></span> Currently Working 202</span>
-						<h3>Clone of Flipkart & IP Port Scanner</h3>
+						<span class="date"><span class="icon-calendar"></span> Currently Working 2025</span>
+						<h3>Python Tools & Secure Flask Login & Registration System</h3>
 						<p>I am a fresher who has recently started exploring the field of cybersecurity and IT through self-learning. I have completed beginner-level projects such as a Flipkart clone and an IP port scanner. I have hands-on experience with tools like Python, Nmap, Metasploit, and various Kali Linux utilities. As part of my learning, I have also successfully exploited a Windows 7 virtual machine in a lab environment. My goal is to become a professional cybersecurity expert with deep knowledge across multiple areas of information technology.</p>
 						<span class="school">Self Learner</span>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section> <!-- .section -->
+	</section>
 
 	<section class="site-section" id="section-about">
 		<div class="container">
 			<div class="row mb-5 align-items-center">
 				<div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
-					<img src="images/WhatsApp Image 2025-07-30 at 19.27.14_deee4b62.jpg" alt="Image placeholder" class="img-fluid">
+					<img src="images/WhatsApp Image 2025-07-30 at 19.27.14_deee4b62.jpg" alt="Image placeholder" class="img-fluid rounded">
 				</div>
 				<div class="col-lg-5 pl-lg-5">
 					<div class="section-heading">
 						<h2>About <strong>Me</strong></h2>
 					</div>
 					<p class="lead">I am a hardworking and dedicated individual who always completes projects before deadlines. I quickly adapt to new situations and enjoy taking on challenges. I have a deep interest in cybersecurity, coding, and network exploration, and I’m continuously expanding my knowledge in these areas. I speak English with confidence, and although I’m still improving, I communicate clearly and effectively.</p>
-					<p class="mb-5  ">I am focused on achieving my dreams and working consistently toward my goals with passion and determination.</p>
-
+					<p class="mb-5">I am focused on achieving my dreams and working consistently toward my goals with passion and determination.</p>
 					<p>
 						<a href="#section-contact" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Hire Me</a>
 						<a href="#" class="btn btn-secondary px-4 py-2 btn-sm">Download CV</a>
 					</p>
 				</div>
 			</div>
-
-
 		</div>
 	</section>
-	<section class="site-section pb-0"  id="section-services">
-		<div class="container">
 
+	<section class="site-section pb-0" id="section-services">
+		<div class="container">
 			<div class="row mb-4">
 				<div class="col-md-12">
 					<div class="section-heading text-center">
@@ -127,9 +162,9 @@
 				</div>
 			</div>
 			<div class="row">
-
+				<!-- RESPONSIVE CHANGE: Each service col goes full width on mobile for easier reading -->
 				<div class="col-md-6 col-lg-4 text-center mb-5">
-					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+					<div class="site-service-item site-animate h-100 d-flex flex-column justify-content-between" data-animate-effect="fadeIn">
 						<span class="icon">
 							<span class="icon-browser2"></span>
 						</span>
@@ -139,7 +174,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-4 text-center mb-5">
-					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+					<div class="site-service-item site-animate h-100 d-flex flex-column justify-content-between" data-animate-effect="fadeIn">
 						<span class="icon">
 							<span class="icon-presentation"></span>
 						</span>
@@ -149,7 +184,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-4 text-center mb-5">
-					<div class="site-service-item site-animate" data-animate-effect="fadeIn">
+					<div class="site-service-item site-animate h-100 d-flex flex-column justify-content-between" data-animate-effect="fadeIn">
 						<span class="icon">
 							<span class="icon-video2"></span>
 						</span>
@@ -158,15 +193,9 @@
 						<p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
 					</div>
 				</div>
-
-				
-
 			</div>
 		</div>
 	</section>
-
-
-	
 
 	<section class="site-section" id="section-blog">
 		<div class="container" id="my-blog">
@@ -177,40 +206,49 @@
 					</div>
 				</div>
 			</div>
-			<div class="blog-flex">
+			<!-- RESPONSIVE CHANGE: Use Bootstrap grid for projects -->
 			<div class="row">
-				<div class="col-sm-6 col-lg-4 mb-4">
-					<div class="blog-entry">
-						<a href="#"><img src="images/Screenshot (196).png" alt="Image placeholder" class="img-fluid"></a>
-						<div class="blog-entry-text">
-							<h3><a href="#">Clone of Flipkart Webpage</a></h3>
-							<p class="mb-4">I have created a static Flipkart clone webpage as part of my learning in web design. It includes a clean layout, product sections, and basic navigation similar to the original Flipkart site. This project shows my ability to design professional-looking e-commerce pages. If you need a similar website for your business, I can create a custom design based on your needs — clean, responsive, and budget-friendly</p>
-
-							<div class="meta">
+				<div class="col-sm-12 col-md-6 col-lg-4 mb-4 d-flex">
+					<div class="blog-entry w-100 d-flex flex-column">
+						<video src="video/30.08.2025_12.16.04_REC.mp4" autoplay loop muted controls class="img-fluid"></video>
+						<div class="blog-entry-text flex-grow-1 d-flex flex-column">
+							<h3><a href="https://github.com/MuhammedRizwanpr/Secure-Flask-Login-Registration-System">Secure Flask Login & Registration System</a></h3>
+							<p class="mb-4">A modern web authentication system built with Flask, featuring secure user registration with real-time username and email availability checks, email verification via OTP, and robust login with instant user feedback and reCAPTCHA protection. This project demonstrates strong security practices, including CSRF protection, password hashing, and both client-side and server-side validation, making it an ideal example of building safe and user-friendly authentication for web applications.</p>
+							<div class="meta mb-2">
 								<a href="#"><span class="icon-calendar"></span> july 30, 2025</a>
 								<a href="#"><span class="icon-bubble"></span> 5 Comments</a>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6 col-lg-4 mb-4">
-					<div class="blog-entry">
+				<div class="col-sm-12 col-md-6 col-lg-4 mb-4 d-flex">
+					<div class="blog-entry w-100 d-flex flex-column">
 						<a href="#"><img src="images/Screenshot (197).png" alt="Image placeholder" class="img-fluid"></a>
-						<div class="blog-entry-text">
-							<h3><a href="#">Web-location Tracker</a></h3>
-							<p class="mb-4">I have created a static web location tracker page as part of my practice in web development. It features a simple layout where users can enter an IP address or location input and view basic tracking info (simulated/static). This project reflects my interest in combining design with technical functionality. If you need a similar page for your website or business, I can create a clean, responsive version tailored to your needs.</p>
-
-							<div class="meta">
+						<div class="blog-entry-text flex-grow-1 d-flex flex-column">
+							<h3><a href="#">My Python Tools</a></h3>
+							<p class="mb-4">I have created a collection of Python tools for a variety of tasks. These include web scraping tools to gather data from websites, port scanning and network scanning tools for security testing, file manipulation tools to manage and modify files efficiently, log analyzing tools to monitor and track activities, as well as SSH remote access and SSH brute force tools for testing server security. Each tool is designed to make tasks easier, automate processes, and explore the capabilities of Python in both automation and cybersecurity.</p>
+							<div class="meta mb-2">
 								<a href="#"><span class="icon-calendar"></span> july 30, 2025</a>
 								<a href="#"><span class="icon-bubble"></span> 5 Comments</a>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="col-sm-12 col-md-6 col-lg-4 mb-4 d-flex">
+					<div class="blog-entry w-100 d-flex flex-column">
+						<a href="#"><img src="images/Screenshot (196).png" alt="Image placeholder" class="img-fluid"></a>
+						<div class="blog-entry-text flex-grow-1 d-flex flex-column">
+							<h3><a href="#">Flipkart Clone Project</a></h3>
+							<p class="mb-4">For my first project, I created a Flipkart clone, a fully functional e-commerce website inspired by Flipkart. The project includes features like product listings, search functionality, shopping cart, and user authentication. It helped me understand how online marketplaces work, including managing products, handling user interactions, and implementing a smooth user experience. This project gave me practical experience in web development and strengthened my skills in building real-world applications.</p>
+							<div class="meta mb-2">
+								<a href="#"><span class="icon-calendar"></span> july 30, 2025</a>
+								<a href="#"><span class="icon-bubble"></span> 5 Comments</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Add more project cards here if needed -->
 			</div>
-		    </div>
 		</div>
 	</section>
 
@@ -222,13 +260,13 @@
 						<h2>Get <strong>In Touch</strong></h2>
 					</div>
 				</div>
-
+				<!-- RESPONSIVE CHANGE: Stack contact form and details on small screens -->
 				<div class="col-md-7 mb-5 mb-md-0">
 					<form action="" class="site-form">
 						<h3 class="mb-5">Get In Touch</h3>
 						<div class="form-group">
-							<input type="text" id="name-mail" class="form-control px-3 py-4" placeholder="Your Name" onkeyup="namevalidation()"required>
-							<span  id="name-message"></span>
+							<input type="text" id="name-mail" class="form-control px-3 py-4" placeholder="Your Name" onkeyup="namevalidation()" required>
+							<span id="name-message"></span>
 						</div>
 						<div class="form-group">
 							<input type="email" id="email-mail" class="form-control px-3 py-4" placeholder="Your Email" onkeyup="emailvalidation()" required>
@@ -239,7 +277,7 @@
 							<span id="number-message"></span>
 						</div>
 						<div class="form-group mb-5">
-							<textarea id="message-email" class="form-control px-3 py-4"cols="30" rows="10" placeholder="Write a Message"></textarea>
+							<textarea id="message-email" class="form-control px-3 py-4" cols="30" rows="10" placeholder="Write a Message"></textarea>
 						</div>
 						<div class="form-group">
 							<button type="button" class="btn btn-primary px-4 py-3" onclick="sendmail()">Send Mail</button>
@@ -273,18 +311,13 @@
 		</div>
 	</section>
 
-
 	<footer class="site-footer">
 		<div class="container">
-
 			<div class="row mb-5">
 				<p class="col-12 text-center">
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					I’m excited to work with you and bring your ideas to life with full dedication and honesty.  <script>document.write(new Date().getFullYear());</script> 
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 				</p>
 			</div>
-			
 			<div class="row mb-5">
 				<div class="col-md-12 text-center">
 					<p>
@@ -294,30 +327,21 @@
 					</p>
 				</div>
 			</div>
-			
 		</div>
 	</footer>
-
-
-
 
 	<script src="js/vendor/jquery.min.js"></script>
 	<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/vendor/popper.min.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
-
 	<script src="js/vendor/jquery.easing.1.3.js"></script>
-
 	<script src="js/vendor/jquery.stellar.min.js"></script>
 	<script src="js/vendor/jquery.waypoints.min.js"></script>
-
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 	<script src="js/custom.js"></script>
-
-	<!-- Google Map -->
+	<!-- Google Map (disabled) -->
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     	<script src="js/google-map.js"></script> -->
-
-    </body>
-    </html>
+</body>
+</html>
